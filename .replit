@@ -1,3 +1,10 @@
 language = "bash"
 audio = true
 run = "firefox -private -url https://duckduckgo.com"
+modules = ["nix"]
+
+[deployment]
+run = ["sh", "-c", "firefox -private -url https://duckduckgo.com"]
+
+[nix]
+channel = "stable-24_05"
